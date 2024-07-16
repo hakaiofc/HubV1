@@ -142,7 +142,7 @@ _G.AutoStr4 = True
 function AutoStr4()
 while _G.AutoStr4 == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(46.24648666381836, 15.3235502243042, 53.776580810546875)
-wait(0.6)
+wait(0.3)
 end
 end
 --Main
