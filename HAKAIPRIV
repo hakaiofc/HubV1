@@ -38,7 +38,7 @@ _G.AutoPeso = True
 function AutoPeso()
 while _G.AutoPeso == true do
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Dumbbell"):FireServer()
-wait(0.385)
+wait(0.485)
 end
 end
 --Valor
@@ -83,6 +83,8 @@ function AutoBat()
 while _G.AutoBat == true do
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
+game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
+
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 wait()
 end
