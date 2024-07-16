@@ -113,7 +113,7 @@ _G.AutoStr = True
 function AutoStr()
 while _G.AutoStr == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6.157426357269287, 14.889446258544922, 50.57463836669922)
-wait(0.4)
+wait(0.9)
 end
 end
 --Valor
@@ -122,7 +122,7 @@ _G.AutoStr1 = True
 function AutoStr1()
 while _G.AutoStr1 == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(65.51814270019531, 15.123571395874023, 52.94154739379883)
-wait(0.4)
+wait(0.3)
 end
 end
 --Valor
@@ -131,7 +131,7 @@ _G.AutoStr2 = True
 function AutoStr2()
 while _G.AutoStr2 == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-19.189403533935547, 14.380013465881348, -145.631591796875)
-wait(0.5)
+wait(0.4)
 end
 end
 --Valor
@@ -140,7 +140,7 @@ _G.AutoStr3 = True
 function AutoStr3()
 while _G.AutoStr3 == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(64.84263610839844, 14.38001537322998, -145.73280334472656)
-wait(0.7)
+wait(0.5)
 end
 end
 --Valor
@@ -196,9 +196,6 @@ MainTab:AddToggle({
         AutoLife()
     end
 })
-
-
-
 --Attack 
 local AttackTab = Window:MakeTab({
     Name = "⚔️Combat⚔️",
@@ -249,12 +246,9 @@ AttackTab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G.AutoBat = Value
-        AutoBat(0.00001)
+        AutoBat()
     end
 })
-
-
-
 
 --Dojo 
 local DojoTab = Window:MakeTab({
@@ -312,7 +306,7 @@ FarmTab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G.AutoStr = Value
-        AutoStr(0.000001)
+        AutoStr()
     end
 })
 FarmTab:AddToggle({
@@ -320,7 +314,7 @@ FarmTab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G.AutoStr1 = Value
-        AutoStr1(0.000001)
+        AutoStr1()
     end
 })
 FarmTab:AddToggle({
@@ -328,7 +322,7 @@ FarmTab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G.AutoStr2 = Value
-        AutoStr2(0.000001)
+        AutoStr2()
     end
 })
 FarmTab:AddToggle({
@@ -336,7 +330,7 @@ FarmTab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G.AutoStr3 = Value
-        AutoStr3(0.000001)
+        AutoStr3()
     end
 })
 FarmTab:AddToggle({
@@ -344,7 +338,7 @@ FarmTab:AddToggle({
     Default = false,
     Callback = function(Value)
         _G.AutoStr4 = Value
-        AutoStr4(0.000001)
+        AutoStr4()
     end
 })
 -- infiniteyield and AFK 
