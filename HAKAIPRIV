@@ -63,9 +63,6 @@ game:GetService("Players").LocalPlayer.Character.Katana.Attack:FireServer()
 wait()
 end
 end
-
-
-
 --Valor
 _G.AutoSweep = True
 
@@ -75,20 +72,16 @@ while _G.AutoSweep == true do
 local args = {
     [1] = "Sweep"
 }
-
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Attack"):FireServer(unpack(args))
 wait()
 end
 end
-
-
-
 --Valor
 _G.AutoSweep = True
-
 --Função
 function AutoBat()
 while _G.AutoBat == true do
+game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
 game:GetService("Players").LocalPlayer.Character.Bat.Attack:FireServer()
